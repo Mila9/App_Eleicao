@@ -8,16 +8,15 @@ export default function Candidato({ candidato }) {
         <View>
           <Text style={styles.listaNome}
             onChangeText={(texto) => setNome(texto)}
-            value={nome}>Nome: {candidato.nome}</Text>
+          value={candidato}>Nome: {candidato.nome}</Text>
           <Text style={styles.listaNome}
            onChangeText={(texto) => setPartido(texto)}
-           value={nome}>Partido: {candidato.partido}</Text>
+           >Partido: {candidato.partido}</Text>
       </View>
 
       <View style={{ flexDirection: "column" }}>
           <Text style={styles.listaNome}
              onChangeText={(texto) => setCategoria(texto)}
-             value={nome}
           >Categoria {candidato.descricao}</Text>
       </View>
       <View style={styles.dadosBotoesAcao}>
